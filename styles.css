@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #87CEFA;
+    color: white;
+}
+
+.logo {
+    max-width: 5%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e6f7ff;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #87CEFA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#project p {
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1.2rem;
+}
+
+#project ul {
+    padding-left: 35%;
+    padding-right: 35%;
+    font-size: 1.2rem;
+}
+
+#project ul li {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    #project p {
+        padding-left: 3%;  /* Adjust for smaller screens */
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    #project p {
+        padding-left: 1%;  /* Further adjustment for very small screens */
+        padding-right: 1%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #87CEFA;
+    color: white;
+}
