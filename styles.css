@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #87CEFA;
+    background-color: #169CE9;
     color: white;
 }
 
@@ -35,13 +35,14 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #e6f7ff;
+    background-color: #BBDEFB;
 }
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin-top: 20px;
-    background-color: #87CEFA;
+    font-weight: bold;
+    background-color: #169CE9;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -81,9 +82,22 @@ section {
     }
 }
 
+
+#competitive img {
+    width: 60%;       /* Scales with the container */
+    max-width: 300px; /* Limits the maximum size */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   
+    margin: 0 auto;   /* Centers the image */
+    padding-top: 5vw;
+}
+
+
+
 footer {
     text-align: center;
+    font-weight: bold;
     padding: 20px;
-    background-color: #87CEFA;
+    background-color: #169CE9;
     color: white;
 }
