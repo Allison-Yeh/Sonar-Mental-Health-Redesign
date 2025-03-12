@@ -6,6 +6,7 @@ body {
     background-color: #f0f8ff;
     color: #333;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #BBDEFB;
+    background-color: #d0e8fc;
 }
 .cta-button {
     display: inline-block;
@@ -82,8 +83,7 @@ section {
     }
 }
 
-
-#competitive img {
+#design-process img:first-of-type {
     width: 60%;       /* Scales with the container */
     max-width: 300px; /* Limits the maximum size */
     height: auto;     /* Maintains aspect ratio */
@@ -91,7 +91,6 @@ section {
     margin: 0 auto;   /* Centers the image */
     padding-top: 5vw;
 }
-
 
 
 footer {
