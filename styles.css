@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Sigmar';
+    src: url('./assets/fonts/Sigmar/Sigmar-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Black';
+    src: url('./assets/fonts/Lexend/static/Lexend-Black.ttf') format('truetype');
+}
+
+
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -62,7 +73,9 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-family: 'Lexend Black', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    /* letter-spacing: 0.1em; Scales with font size */
     font-weight: bold;
     margin-bottom: 10px;
     color: #2c3e50; /* Updated title color */
@@ -203,8 +216,8 @@ body {
 
 .key-features-text {
     max-width: 600px;
-    width: 80%; /* Allow the text block to take up the full width */
-    margin: 0 auto; /* Centers the text block horizontally */
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -216,7 +229,44 @@ body {
 
 .key-features-text ul {
     list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
 }
+
+.key-features-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Aligns captions at the top */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers image and caption */
+    width: 150px; /* Adjust as needed */
+}
+
+figcaption {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    min-height: 40px; /* Ensures all captions take up the same space */
+
+}
+
+.key-features-images img {
+    width: 100%; /* Adjust the size as needed */
+    max-width: 150px; /* Prevent images from being too large */
+    height: 100%; /* Ensures all images have the same height */
+    object-fit: contain; /* Keeps image proportions intact */
+    border-radius: 8px; /* Optional */
+}
+
 
 
 /* full prototype section*/
@@ -330,6 +380,7 @@ h3 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px; /* Space between the title and flexbox */
+    
 }
 
 
@@ -337,13 +388,13 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center; /* Centers content horizontally */
-    gap: 80px;
+    gap: 10%;
     padding: 40px;
     flex-wrap: nowrap; /* Prevents wrapping */
 }
 
 .girl-sitting-image {
-    width: 350px; /* Adjust as needed */
+    width: 500px; /* Adjust as needed */
     height: auto;
     flex-shrink: 0; /* Ensures the image doesn’t shrink too much */
 }
