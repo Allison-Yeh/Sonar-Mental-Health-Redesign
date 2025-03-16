@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: white;
     color: #333;
 }
 
@@ -50,62 +50,13 @@ body {
 }
 
 
-/* Left Sidebar Navigation */
-.side-navbar {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200px;
-}
-
-.side-navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.side-navbar li {
-    margin-bottom: 12px;
-}
-
-.side-navbar a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    padding: 8px 0;
-    display: inline-block;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Modern hover effect with an underline animation */
-.side-navbar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background-color: #007bff; /* Change to your accent color */
-    transition: width 0.3s ease-in-out;
-}
-
-.side-navbar a:hover {
-    color: #007bff;
-}
-
-.side-navbar a:hover::after {
-    width: 100%;
-}
 
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(135deg, #d0e8fc, #a3d5f7);
+    background: white;
     color: #2c3e50;
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -117,13 +68,172 @@ body {
     color: #2c3e50; /* Updated title color */
 }
 
-
 .hero p {
     font-size: 1.2rem;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     line-height: 1.6;
 }
+
+.hero img {
+    width: 80%; /* Adjust this value to control the size */
+    max-width: 1200px; /* Prevents the image from being too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        width: 90%; /* Adjust size for smaller screens */
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* description section */
+.description-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    gap: 80px;
+    padding: 40px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.onboarding-image {
+    width: 350px; /* Adjust as needed */
+    height: auto;
+    flex-shrink: 0; /* Ensures the image doesn’t shrink too much */
+}
+
+.onboarding-text {
+    max-width: 600px;
+    flex-grow: 1; /* Allows text to take available space */
+    text-align: center;
+}
+
+.onboarding-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.onboarding-text ul {
+    list-style-type: disc;
+    padding-right: 20px;
+}
+
+
+/* motivation section */
+.motivation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    gap: 80px;
+    padding: 40px;
+    padding-bottom: 7%;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.texting-image {
+    width: 500px; /* Adjust as needed */
+    height: auto;
+    flex-shrink: 0; /* Ensures the image doesn’t shrink too much */
+}
+
+.motivation-text {
+    max-width: 600px;
+    flex-grow: 1; /* Allows text to take available space */
+}
+
+.motivation-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.motivation-text ul {
+    list-style-type: disc;
+    padding-left: 100px;
+}
+
+
+/* learn about sonar section */
+.sonar-section {
+    background: linear-gradient(135deg, #169CE9, #1E78C9, #16B9E9);
+    padding: 60px;
+    text-align: center;
+}
+
+.sonar-text {
+    color: white;
+}
+
+.sonar-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sonar-button:hover {
+    background: #414141;
+}
+  
+
+/* key features section */
+.key-features-section {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.key-features-text {
+    max-width: 600px;
+    width: 80%; /* Allow the text block to take up the full width */
+    margin: 0 auto; /* Centers the text block horizontally */
+    text-align: center;
+}
+
+.key-features-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.key-features-text ul {
+    list-style-type: disc;
+}
+
+
+/* full prototype section*/
+.container {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10%;
+
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+}
+
 
 /* CTA Button */
 .cta-button {
@@ -160,104 +270,7 @@ body {
 }
 
 
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
 
-#project p {
-    padding-left: 25%;
-    padding-right: 25%;
-    font-size: 1.2rem;
-}
-
-#project ul {
-    padding-left: 35%;
-    padding-right: 35%;
-    font-size: 1.2rem;
-}
-
-#project ul li {
-    margin-bottom: 10px; /* Adjust as needed */
-}
-
-
-/* meet the team section */
-#team {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
-.team-section {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 3%;
-    gap: 20px; /* Spacing between team members */
-}
-
-.team-member {
-    max-width: 200px;
-    text-align: center;
-}
-
-.team-member img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
-}
-
-
-/* design process page */
-
-#problem-statement p {
-    padding-left: 25%;
-    padding-right: 25%;
-    font-size: 1.2rem;
-}
-
-#motivation p {
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 1.2rem;
-}
-
-#competitive-analysis p {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 3%;
-    font-size: 1.2rem;
-}
-
-#competitive-analysis img:first-of-type {
-    width: 60%;       /* Scales with the container */
-    max-width: 300px; /* Limits the maximum size */
-    height: auto;     /* Maintains aspect ratio */
-    display: block;   
-    margin: 0 auto;   /* Centers the image */
-    padding-top: 3vw;
-}
 
 
 footer {
@@ -269,3 +282,84 @@ footer {
 }
 
 
+/* meet the team section */
+#team {
+    text-align: center;
+    padding: 40px 20px;
+    padding-bottom: 20%;
+    background-color: #f9f9f9;
+}
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 20px; /* Spacing between team members */
+}
+.team-member {
+    max-width: 200px;
+    text-align: center;
+}
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+/* sonar mental health page */
+
+.what-is-sonar-title {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; /* Space between the title and flexbox */
+}
+
+
+.what-is-sonar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    gap: 80px;
+    padding: 40px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.girl-sitting-image {
+    width: 350px; /* Adjust as needed */
+    height: auto;
+    flex-shrink: 0; /* Ensures the image doesn’t shrink too much */
+}
+
+.what-is-sonar-text {
+    max-width: 600px;
+    flex-grow: 1; /* Allows text to take available space */
+    text-align: center;
+}
+
+.what-is-sonar-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.what-is-sonar-text ul {
+    list-style-type: disc;
+    padding-right: 20px;
+}
