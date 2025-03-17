@@ -249,7 +249,7 @@ body {
 /* key features section */
 .key-features-section {
     text-align: center;
-    padding: 60px 0px;
+    padding-top: 10%;
 }
 
 .key-features-text {
@@ -271,7 +271,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start; /* Aligns captions at the top */
-    gap: 10px;
+    gap: 0px;
     margin-top: 5%;
 }
 
@@ -279,8 +279,10 @@ figure {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers image and caption */
-    width: 230px; /* Adjust as needed */
+    align-items: center; 
+    width: 230px;
+    height: auto;
+    padding: 0%;
 }
 
 figcaption {
@@ -303,7 +305,7 @@ figcaption {
 /* full prototype section*/
 .interactive-prototype-section {
     text-align: center;
-    padding: 20px;
+    padding-top: 10%;
     padding-bottom: 10%;
 }
 
@@ -454,7 +456,45 @@ h3 {
     font-size: 40px;
 }
 
-.what-is-sonar-text ul {
+.what-is-sonar-text p {
+    font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
+    font-size: 3vh;
     list-style-type: disc;
     padding-right: 20px;
+}
+
+/* sign-up section */
+.sign-up-section {
+    /* background: linear-gradient(135deg, #169CE9, #1E78C9, #16B9E9); */
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.sign-up-text {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.sign-up-text h2 {
+    font-size: 6vh;
+}
+
+.sign-up-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sign-up-button:hover {
+    background: #414141;
 }
