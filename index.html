@@ -6,6 +6,29 @@
     <title>UI/UX Project Showcase</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.2 // Trigger when 20% of the element is visible
+        };
+    
+        const fadeInElements = document.querySelectorAll('.fade-in-left, .fade-in-right, .fade-in-bottom');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        }, observerOptions);
+    
+        fadeInElements.forEach(element => observer.observe(element));
+    });
+</script>
+    
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -30,17 +53,19 @@
         <img src="assets/images/onboarding.png" alt="Onboarding">
     </header>
     
-    <div class="description-section">
+    <div class="description-section fade-in-left">
         <img src="assets/images/girl-signing-up.png" alt="Girl signing up" class="onboarding-image">
         <div class="onboarding-text">
             <h2>What is Sonar's onboarding process?</h2>
             <p>
-                The onboarding process covers everything between downloading the app to using Sonar's chat feature. Students create an account, provide basic information, and answer onboarding questions to set preferences and customize their experience.
+                The onboarding process covers everything between downloading the app to using Sonar's chat 
+                feature. Students create an account, provide basic information, and answer onboarding 
+                questions to set preferences and customize their experience.
             </p>
         </div>
     </div>
     
-    <div class="motivation-section">
+    <div class="motivation-section fade-in-right">
         <div class="motivation-text">
             <h2>Motivation</h2>
             <p>
@@ -65,16 +90,10 @@
         </div>
     </section>
 
-    <div class="key-features-section">
+    <div class="key-features-section fade-in-bottom">
         <div class="key-features-text">
             <h2>Key Features</h2>
-            <!-- <ul>
-                <li>Sign up with your email and create a password.</li>
-                <li>Complete a short questionnaire to personalize your experience.</li>
-                <li>Get matched with relevant resources and support.</li>
-                <li>Start using Sonar with guided tutorials and assistance.</li>
-            </ul> -->
-        </div>
+        </di
         
         <div class="key-features-images">
             <figure>
@@ -113,6 +132,8 @@
     <footer>
         <p>&copy; 2025 Health Informatics Class Project</p>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
 
