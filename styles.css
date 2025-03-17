@@ -94,14 +94,14 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 3% 20px;
     background: white;
     /* color: #2c3e50; */
 }
 
 .hero h1 {
     font-family: 'Lexend Black', Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 0;
     color: #1E3A8A; /* Updated title color */
@@ -185,7 +185,7 @@ body {
     color:#1E3A8A;
     list-style-type: disc;
     padding-right: 20px;
-    font-size: 2vh;
+    font-size: 2.3vh;
     width: 100%;
 }
 
@@ -230,9 +230,8 @@ body {
 .motivation-text p {
     font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
     color:#1E3A8A;
-
     text-align: center;
-    font-size: 2vh;
+    font-size: 2.3vh;
     width: 100%;
     /* list-style-type: disc; */
 }
@@ -397,14 +396,15 @@ footer {
 /* meet the team section */
 #team {
     text-align: center;
-    padding: 40px 20px;
+    padding-top: 3%;
+    /* padding: 40px 20px; */
     padding-bottom: 20%;
     background-color: #f9f9f9;
   
 }
 .team-section {
     text-align: center;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
 }
 
 #team h2 {
@@ -455,7 +455,7 @@ h3 {
     font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     color: #1E3A8A;
     font-size: 6vh;    
-    margin-top: 7%;
+    margin-top: 6%;
     text-align: center;
     margin-bottom: 20px; /* Space between the title and flexbox */
     
@@ -486,7 +486,7 @@ h3 {
 .what-is-sonar-text p {
     font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
     color: #1E3A8A;
-    font-size: 3vh;
+    font-size: 2.5vh;
     list-style-type: disc;
     padding-right: 20px;
 }
