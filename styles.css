@@ -9,6 +9,16 @@
 }
 
 
+@font-face {
+    font-family: 'Lexend Bold';
+    src: url('./assets/fonts/Lexend/static/Lexend-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Regular';
+    src: url('./assets/fonts/Lexend/static/Lexend-Regular.ttf') format('truetype');
+}
+
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -62,29 +72,37 @@ body {
 
 
 
-
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 20px;
     background: white;
     color: #2c3e50;
-    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
     font-family: 'Lexend Black', Arial, Helvetica, sans-serif;
     font-size: 4rem;
-    /* letter-spacing: 0.1em; Scales with font size */
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    color: #2c3e50; /* Updated title color */
+}
+
+.hero h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
     color: #2c3e50; /* Updated title color */
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 3%;
     line-height: 1.6;
 }
 
@@ -117,7 +135,9 @@ body {
     align-items: center;
     justify-content: center; /* Centers content horizontally */
     gap: 80px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
     flex-wrap: nowrap; /* Prevents wrapping */
 }
 
@@ -128,32 +148,40 @@ body {
 }
 
 .onboarding-text {
-    max-width: 600px;
+    max-width: 500px;
     flex-grow: 1; /* Allows text to take available space */
     text-align: center;
 }
 
 .onboarding-text h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 40px;
 }
 
-.onboarding-text ul {
+.onboarding-text p {
+    font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
     list-style-type: disc;
     padding-right: 20px;
+    font-size: 2vh;
+    width: 100%;
 }
 
 
 /* motivation section */
 .motivation-section {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns text block to the top */
+    justify-content: center;
+    align-items: center; /* Vertically centers items */
     gap: 80px;
-    padding: 40px;
-    padding-bottom: 7%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
     flex-wrap: nowrap; /* Prevents wrapping */
 }
+
 
 .texting-image {
     width: 500px; /* Adjust as needed */
@@ -162,20 +190,26 @@ body {
 }
 
 .motivation-text {
-    max-width: 600px;
+    max-width: 500px;
     flex-grow: 1; /* Allows text to take available space */
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .motivation-text h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
-
 }
 
-.motivation-text ul {
-    list-style-type: disc;
-    padding-left: 100px;
+.motivation-text p {
+    font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2vh;
+    width: 100%;
+    /* list-style-type: disc; */
 }
 
 
@@ -188,6 +222,10 @@ body {
 
 .sonar-text {
     color: white;
+}
+
+.sonar-text h2 {
+    font-size: 4vh;
 }
 
 .sonar-button {
@@ -211,27 +249,21 @@ body {
 /* key features section */
 .key-features-section {
     text-align: center;
-    padding: 120px 20px;
+    padding: 60px 0px;
 }
 
 .key-features-text {
-    max-width: 600px;
+    /* max-width: 600px; */
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
 .key-features-text h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
-}
-
-.key-features-text ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    display: inline-block;
 }
 
 .key-features-images {
@@ -239,8 +271,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start; /* Aligns captions at the top */
-    gap: 20px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 5%;
 }
 
 figure {
@@ -248,20 +280,19 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers image and caption */
-    width: 150px; /* Adjust as needed */
+    width: 230px; /* Adjust as needed */
 }
 
 figcaption {
-    font-size: 14px;
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    font-size: 20px;
     margin-bottom: 15px;
-    font-weight: bold;
     min-height: 40px; /* Ensures all captions take up the same space */
-
 }
 
 .key-features-images img {
     width: 100%; /* Adjust the size as needed */
-    max-width: 150px; /* Prevent images from being too large */
+    /* max-width: 150px; Prevent images from being too large */
     height: 100%; /* Ensures all images have the same height */
     object-fit: contain; /* Keeps image proportions intact */
     border-radius: 8px; /* Optional */
@@ -270,11 +301,15 @@ figcaption {
 
 
 /* full prototype section*/
-.container {
+.interactive-prototype-section {
     text-align: center;
     padding: 20px;
     padding-bottom: 10%;
+}
 
+.interactive-prototype-section h1 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
 iframe {
@@ -319,10 +354,6 @@ iframe {
     }
 }
 
-
-
-
-
 footer {
     text-align: center;
     font-weight: bold;
@@ -338,22 +369,33 @@ footer {
     padding: 40px 20px;
     padding-bottom: 20%;
     background-color: #f9f9f9;
+  
 }
 .team-section {
     text-align: center;
     padding: 50px 20px;
 }
+
+#team h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    font-size: 40px;    
+}
+
 .team-container {
+    font-family: 'Lexend Regular', Arial, Helvetica, sans-serif;
+    font-size: 2vh;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 3%;
     gap: 20px; /* Spacing between team members */
 }
+
 .team-member {
     max-width: 200px;
     text-align: center;
 }
+
 .team-member img {
     width: 200px;
     height: 200px;
@@ -368,6 +410,7 @@ footer {
         align-items: center;
     }
 }
+
 h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
@@ -376,13 +419,13 @@ h3 {
 /* sonar mental health page */
 
 .what-is-sonar-title {
-    margin-top: 10%;
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
+    font-size: 6vh;    
+    margin-top: 7%;
     text-align: center;
-    font-size: 24px;
     margin-bottom: 20px; /* Space between the title and flexbox */
     
 }
-
 
 .what-is-sonar-section {
     display: flex;
@@ -406,8 +449,9 @@ h3 {
 }
 
 .what-is-sonar-text h2 {
+    font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .what-is-sonar-text ul {
