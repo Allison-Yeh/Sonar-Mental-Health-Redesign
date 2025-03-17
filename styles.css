@@ -527,3 +527,30 @@ h3 {
     background: #414141;
     transform: scale(1.07);
 }
+
+
+/* transitions */
+/* General fade-in styles */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Apply visible styles when elements enter view */
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
