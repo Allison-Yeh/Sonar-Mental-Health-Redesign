@@ -287,7 +287,7 @@ body {
 .key-features-text h2 {
     font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     color:#1E3A8A;
-    margin-bottom: 10px;
+    margin-bottom: 6%;
     font-size: 40px;
     text-align: center;
 }
@@ -298,7 +298,7 @@ body {
     justify-content: center;
     align-items: flex-start; /* Aligns captions at the top */
     gap: 0px;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 figure {
@@ -315,7 +315,7 @@ figcaption {
     font-family: 'Lexend Bold', Arial, Helvetica, sans-serif;
     color:#1E3A8A;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20%;
     min-height: 40px; /* Ensures all captions take up the same space */
 }
 
@@ -397,14 +397,12 @@ footer {
 #team {
     text-align: center;
     padding-top: 3%;
-    /* padding: 40px 20px; */
     padding-bottom: 20%;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   
 }
 .team-section {
     text-align: center;
-    /* padding: 50px 20px; */
 }
 
 #team h2 {
@@ -425,10 +423,13 @@ footer {
 }
 
 .team-member {
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
 }
 
+.team-member p {
+    font-weight: bold;
+}
 .team-member img {
     width: 200px;
     height: 200px;
@@ -553,4 +554,120 @@ h3 {
 .visible {
     opacity: 1;
     transform: translateX(0) translateY(0);
+}
+
+
+
+/* design process page */
+/* Design Process Page Styling */
+
+/* Centering each section */
+.design-process-page section {
+    max-width: 800px; 
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Left Sidebar Navigation - Improved */
+.side-navbar {
+    position: fixed;
+    left: 20px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.9); /* Subtle background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #007B8F; /* Accent color */
+}
+
+/* Styling the links */
+.side-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-navbar li {
+    margin-bottom: 12px;
+}
+.side-navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #007B8F;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.side-navbar a:hover {
+    background-color: #007B8F;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Highlight active section */
+.side-navbar a.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Styling specific sections */
+.problem-statement h2,
+.study-purpose h2,
+.competitive-analysis h2,
+.personas h2,
+.prototype1 h2,
+.prototype2 h2,
+.prototype3 h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Images in competitive analysis */
+.ca-container {
+    text-align: center;
+}
+
+.ca-container img {
+    max-width: 80%; /* Adjust this value as needed */
+    max-height: 50%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+
+.ca-container2 img {
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .side-navbar {
+        width: 180px;
+        left: 10px;
+        padding: 10px;
+    }
+    .side-navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.persona-container img {
+    text-align: center;
+    max-width: 100%; 
+    height: auto;
 }
