@@ -559,11 +559,10 @@ h3 {
 
 
 /* design process page */
-/* Design Process Page Styling */
 
 /* Centering each section */
 .design-process-page section {
-    max-width: 900px; 
+    max-width: 68%; 
     margin: 40px auto;
     text-align: center;
     padding: 20px;
@@ -578,9 +577,9 @@ h3 {
     width: 200px;
     background-color: rgba(255, 255, 255, 0.9); /* Subtle background */
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #007B8F; /* Accent color */
+    border: 1px solid #007B8F; /* Accent color */
 }
 
 /* Styling the links */
@@ -608,7 +607,7 @@ h3 {
 .side-navbar a:hover {
     background-color: #007B8F;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* Highlight active section */
@@ -622,6 +621,7 @@ h3 {
 .study-purpose h2,
 .competitive-analysis h2,
 .personas h2,
+.wireframes h2,
 .prototype1 h2,
 .prototype2 h2,
 .prototype3 h2 {
@@ -631,6 +631,17 @@ h3 {
     border-bottom: 3px solid #007bff;
     display: inline-block;
     padding-bottom: 5px;
+}
+
+.problem-statement p,
+.study-purpose p,
+.competitive-analysis p,
+.personas p,
+.wireframes p,
+.prototype1 p,
+.prototype2 p,
+.prototype3 p {
+    font-size: 24px;
 }
 
 /* Images in competitive analysis */
