@@ -500,7 +500,8 @@ h3 {
 
 /* sign-up section */
 .sign-up-section {
-    /* background: linear-gradient(135deg, #169CE9, #1E78C9, #16B9E9); */
+    background: #ffeeda;
+    /* linear-gradient(135deg, #169CE9, #1E78C9, #16B9E9); */
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
@@ -565,6 +566,19 @@ h3 {
 
 
 /* design process page */
+
+.figma-link {
+    display: inline-block; /* Ensures the margin applies properly */
+    font-size: 18px; /* Makes the link bigger */
+    font-weight: bold; /* Makes the text stand out */
+    margin-bottom: 10px; /* Adds space below the link */
+    text-decoration: none; /* Removes underline */
+    color: #007bff; /* Blue color for visibility */
+}
+
+.figma-link:hover {
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
 
 /* Centering each section */
 .design-process-page section {
