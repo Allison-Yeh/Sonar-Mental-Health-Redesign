@@ -563,7 +563,7 @@ h3 {
 
 /* Centering each section */
 .design-process-page section {
-    max-width: 800px; 
+    max-width: 900px; 
     margin: 40px auto;
     text-align: center;
     padding: 20px;
@@ -575,10 +575,10 @@ h3 {
     left: 20px;
     top: 35%;
     transform: translateY(-50%);
-    width: 220px;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.9); /* Subtle background */
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #007B8F; /* Accent color */
 }
@@ -594,7 +594,7 @@ h3 {
 }
 .side-navbar a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #007B8F;
     padding: 10px;
@@ -645,6 +645,10 @@ h3 {
     width: auto;
 }
 
+.ca-container2 {
+    padding-top: 5%;
+}
+
 .ca-container2 img {
     max-width: 100%; /* Adjust this value as needed */
     max-height: 80%; /* Set a reasonable max height */
@@ -666,8 +670,57 @@ h3 {
     }
 }
 
-.persona-container img {
+.persona1-container img {
     text-align: center;
     max-width: 100%; 
     height: auto;
+}
+
+.persona2-container {
+    padding-top: 5%;
+}
+
+.persona2-container img {
+    text-align: center;
+    max-width: 100%; 
+    height: auto;
+}
+
+.wireframe-container img {
+    text-align: center;
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+
+.proto1-container img {
+    text-align: center;
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+
+.proto2pt1-container img {
+    text-align: center;
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+
+.proto2pt2-container img {
+    text-align: center;
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
+}
+.proto3-container img {
+    text-align: center;
+    max-width: 100%; /* Adjust this value as needed */
+    max-height: 80%; /* Set a reasonable max height */
+    height: auto;
+    width: auto;
 }
